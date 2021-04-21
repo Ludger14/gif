@@ -1,0 +1,9 @@
+<div class="login-box">
+    <h2>Buscar o Gif</h2>
+      <form #nossoForm="ngForm" (ngSubmit)="pesquisar(nossoForm.form)">
+          <div class="user-box">
+              <input type="text" required placeholder="Coloque o nome da imagem..." name="vamos_rir" [(ngModel)]="vamos_rir" id="search">                  
+          </div>             
+          <button type="submit">Pesquisar</button>
+      </form>
+  </div>

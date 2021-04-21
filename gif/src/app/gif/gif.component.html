@@ -1,0 +1,11 @@
+<div class="resultado-box">
+    <h2>Resultado</h2>
+      <form>                           
+          <button type="button" onclick="javascript:location.href='/'">Pesquisar outra imagem</button>
+      </form>
+      <div class="w100">
+          <div class="w20" *ngFor="let img of gif.data">
+              <img [src]="img.images.fixed_width.url">
+          </div>
+      </div>
+</div>
